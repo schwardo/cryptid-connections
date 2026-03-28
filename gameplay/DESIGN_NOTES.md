@@ -13,9 +13,9 @@ There are 64 unique cryptids in the game, each with a distinct set of 12 attribu
 
 ## Head (blue)
 
-Bones on Head (icons/head-bone.png): Features rigid antlers, jagged horns, or an exposed skull face.
+Horns (icons/head-bone.png): Bones on the head:  rigid antlers, jagged horns, or an exposed skull face.
 
-Fins on Head (icons/head-fin.png): Features vibrant frills, dorsal fins, or external gills on the head.
+Fin (icons/head-fin.png): Vibrant frills, dorsal fins, or external gills on the head.
 
 ## Eyes (purple)
 
