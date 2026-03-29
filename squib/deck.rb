@@ -14,6 +14,10 @@ Squib::Deck.new cards: data['title'].size, layout: 'layout.yml' do
   total_width = 825
   total_height = 1125
 
+  png file: data['image_filename'].map { |x| "../artwork/cropped/#{x}.png" },
+      x: 0, y: 0,
+      width: 825, height: 1125
+
   # Card frame
   png file: "../graphics/card-frame.png",
       x: 65, y: 50,

@@ -1,65 +1,65 @@
-id,title,head,eyes,mouth,hands,skin,tail
-00,Foul Mud-Mace,bone,beady,fangs,webbed,fur,club
-01,Swamp Strangler,bone,beady,fangs,webbed,fur,tentacles
-02,Scaly Mire-Smasher,bone,beady,fangs,webbed,scales,club
-03,The Armored Kelp-Fiend,bone,beady,fangs,webbed,scales,tentacles
-04,Shaggy Mountain-Pounder,bone,beady,fangs,claws,fur,club
-05,Hairy Cave-Kraken,bone,beady,fangs,claws,fur,tentacles
-06,The Obsidian Bone-Basher,bone,beady,fangs,claws,scales,club
-07,Slithering Rock-Biter,bone,beady,fangs,claws,scales,tentacles
-08,Furry River-Snapper,bone,beady,beak,webbed,fur,club
-09,The Webbed Pond-Reaper,bone,beady,beak,webbed,fur,tentacles
-10,The Riverbed Bone-Tail,bone,beady,beak,webbed,scales,club
-11,Squid-Beak of the Mire,bone,beady,beak,webbed,scales,tentacles
-12,Fuzzy Peak-Pecker,bone,beady,beak,claws,fur,club
-13,The Hairy Cliff-Ripper,bone,beady,beak,claws,fur,tentacles
-14,Gravel-Gum Smasher,bone,beady,beak,claws,scales,club
-15,The Scaly Canyon-Squid,bone,beady,beak,claws,scales,tentacles
-16,The Hex-Eyed Swamp-Dog,bone,compound,fangs,webbed,fur,club
-17,The Fuzzy Pond-Watcher,bone,compound,fangs,webbed,fur,tentacles
-18,The Multi-Seeing Mire-Mace,bone,compound,fangs,webbed,scales,club
-19,The Scale-Flasher of the Deep,bone,compound,fangs,webbed,scales,tentacles
-20,Spider-Eyed Ridge-Wolf,bone,compound,fangs,claws,fur,club
-21,The Arachnid Ape-Fiend,bone,compound,fangs,claws,fur,tentacles
-22,The Armored Hex-Biter,bone,compound,fangs,claws,scales,club
-23,The Scaly Vine-Lurker,bone,compound,fangs,claws,scales,tentacles
-24,The Buzzing Bog-Bird,bone,compound,beak,webbed,fur,club
-25,The Fuzzy Frog-Squid,bone,compound,beak,webbed,fur,tentacles
-26,The Insectoid River-Smasher,bone,compound,beak,webbed,scales,club
-27,The Glistening Pond-Stalker,bone,compound,beak,webbed,scales,tentacles
-28,The Shaggy Owl-Mace,bone,compound,beak,claws,fur,club
-29,The Highland Spider-Beak,bone,compound,beak,claws,fur,tentacles
-30,The Armored Bug-Bird,bone,compound,beak,claws,scales,club
-31,The Reptilian Hex-Ripper,bone,compound,beak,claws,scales,tentacles
-32,The Crested Otter-Smasher,fin,beady,fangs,webbed,fur,club
-33,The Shaggy Sea-Serpent,fin,beady,fangs,webbed,fur,tentacles
-34,The Finned Lake-Pounder,fin,beady,fangs,webbed,scales,club
-35,The Scaly Coral-Biter,fin,beady,fangs,webbed,scales,tentacles
-36,The Fuzzy Ridge-Runner,fin,beady,fangs,claws,fur,club
-37,The Hairy Finned-Lasher,fin,beady,fangs,claws,fur,tentacles
-38,The Armored Crest-Mace,fin,beady,fangs,claws,scales,club
-39,The Scaly Reef-Reaper,fin,beady,fangs,claws,scales,tentacles
-40,The Furry River-Platypus,fin,beady,beak,webbed,fur,club
-41,The Hairy Lake-Kraken,fin,beady,beak,webbed,fur,tentacles
-42,The Finned Swamp-Turtle,fin,beady,beak,webbed,scales,club
-43,The Scaly Deep-Snapper,fin,beady,beak,webbed,scales,tentacles
-44,The Crested Forest-Pecker,fin,beady,beak,claws,fur,club
-45,The Hairy Talon-Squid,fin,beady,beak,claws,fur,tentacles
-46,The Armored Desert-Finch,fin,beady,beak,claws,scales,club
-47,The Finned Rock-Slitherer,fin,beady,beak,claws,scales,tentacles
-48,The Hex-Eyed River-Mace,fin,compound,fangs,webbed,fur,club
-49,The Fuzzy Swamp-Swarm,fin,compound,fangs,webbed,fur,tentacles
-50,The Insectoid Lake-Biter,fin,compound,fangs,webbed,scales,club
-51,The Multi-Seeing Reef-Lurker,fin,compound,fangs,webbed,scales,tentacles
-52,The Shaggy Spider-Fin,fin,compound,fangs,claws,fur,club
-53,The Hairy Crevice-Crawler,fin,compound,fangs,claws,fur,tentacles
-54,The Scaly Hex-Pounder,fin,compound,fangs,claws,scales,club
-55,The Armored Bug-Biter,fin,compound,fangs,claws,scales,tentacles
-56,The Crested Bog-Hummer,fin,compound,beak,webbed,fur,club
-57,The Fuzzy Pond-Wasp,fin,compound,beak,webbed,fur,tentacles
-58,The Insectoid Swamp-Snapper,fin,compound,beak,webbed,scales,club
-59,The Scaly Lake-Mantis,fin,compound,beak,webbed,scales,tentacles
-60,The Hairy Ridge-Buzzard,fin,compound,beak,claws,fur,club
-61,The Spider-Eyed Owl-Squid,fin,compound,beak,claws,fur,tentacles
-62,The Armored Hive-Bird,fin,compound,beak,claws,scales,club
-63,The Finned Canyon-Crawler,fin,compound,beak,claws,scales,tentacles
+id,title,head,eyes,mouth,hands,skin,tail,image_filename
+00,Foul Mud-Mace,bone,beady,fangs,webbed,fur,club,00_Foul_Mud_Mace
+01,Swamp Strangler,bone,beady,fangs,webbed,fur,tentacles,01_Swamp_Strangler
+02,Scaly Mire-Smasher,bone,beady,fangs,webbed,scales,club,02_Scaly_Mire_Smasher
+03,The Armored Kelp-Fiend,bone,beady,fangs,webbed,scales,tentacles,03_The_Armored_Kelp_Fiend
+04,Shaggy Mountain-Pounder,bone,beady,fangs,claws,fur,club,04_Shaggy_Mountain_Pounder
+05,Hairy Cave-Kraken,bone,beady,fangs,claws,fur,tentacles,05_Hairy_Cave_Kraken
+06,The Obsidian Bone-Basher,bone,beady,fangs,claws,scales,club,06_The_Obsidian_Bone_Basher
+07,Slithering Rock-Biter,bone,beady,fangs,claws,scales,tentacles,07_Slithering_Rock_Biter
+08,Furry River-Snapper,bone,beady,beak,webbed,fur,club,08_Furry_River_Snapper
+09,The Webbed Pond-Reaper,bone,beady,beak,webbed,fur,tentacles,09_The_Webbed_Pond_Reaper
+10,The Riverbed Bone-Tail,bone,beady,beak,webbed,scales,club,10_The_Riverbed_Bone_Tail
+11,Squid-Beak of the Mire,bone,beady,beak,webbed,scales,tentacles,11_Squid_Beak_of_the_Mire
+12,Fuzzy Peak-Chomper,bone,beady,beak,claws,fur,club,12_Fuzzy_Peak_Chomper
+13,The Hairy Cliff-Ripper,bone,beady,beak,claws,fur,tentacles,13_The_Hairy_Cliff_Ripper
+14,Gravel-Gum Smasher,bone,beady,beak,claws,scales,club,14_Gravel_Gum_Smasher
+15,The Scaly Canyon-Squid,bone,beady,beak,claws,scales,tentacles,15_The_Scaly_Canyon_Squid
+16,The Hex-Eyed Swamp-Dog,bone,compound,fangs,webbed,fur,club,16_The_Hex_Eyed_Swamp_Dog
+17,The Fuzzy Pond-Watcher,bone,compound,fangs,webbed,fur,tentacles,17_The_Fuzzy_Pond_Watcher
+18,The Multi-Seeing Mire-Mace,bone,compound,fangs,webbed,scales,club,18_The_Multi_Seeing_Mire_Mace
+19,The Scale-Flasher of the Deep,bone,compound,fangs,webbed,scales,tentacles,19_The_Scale_Flasher_of_the_Deep
+20,Spider-Eyed Ridge-Wolf,bone,compound,fangs,claws,fur,club,20_Spider_Eyed_Ridge_Wolf
+21,The Arachnid Ape-Fiend,bone,compound,fangs,claws,fur,tentacles,21_The_Arachnid_Ape_Fiend
+22,The Armored Hex-Biter,bone,compound,fangs,claws,scales,club,22_The_Armored_Hex_Biter
+23,The Scaly Vine-Lurker,bone,compound,fangs,claws,scales,tentacles,23_The_Scaly_Vine_Lurker
+24,The Buzzing Bog-Bird,bone,compound,beak,webbed,fur,club,24_The_Buzzing_Bog_Bird
+25,The Fuzzy Frog-Squid,bone,compound,beak,webbed,fur,tentacles,25_The_Fuzzy_Frog_Squid
+26,The Insectoid River-Smasher,bone,compound,beak,webbed,scales,club,26_The_Insectoid_River_Smasher
+27,The Glistening Pond-Stalker,bone,compound,beak,webbed,scales,tentacles,27_The_Glistening_Pond_Stalker
+28,The Shaggy Owl-Mace,bone,compound,beak,claws,fur,club,28_The_Shaggy_Owl_Mace
+29,The Highland Spider-Beak,bone,compound,beak,claws,fur,tentacles,29_The_Highland_Spider_Beak
+30,The Armored Bug-Bird,bone,compound,beak,claws,scales,club,30_The_Armored_Bug_Bird
+31,The Reptilian Hex-Ripper,bone,compound,beak,claws,scales,tentacles,31_The_Reptilian_Hex_Ripper
+32,The Crested Otter-Smasher,fin,beady,fangs,webbed,fur,club,32_The_Crested_Otter_Smasher
+33,The Shaggy Sea-Serpent,fin,beady,fangs,webbed,fur,tentacles,33_The_Shaggy_Sea_Serpent
+34,The Finned Lake-Pounder,fin,beady,fangs,webbed,scales,club,34_The_Finned_Lake_Pounder
+35,The Scaly Coral-Biter,fin,beady,fangs,webbed,scales,tentacles,35_The_Scaly_Coral_Biter
+36,The Fuzzy Ridge-Runner,fin,beady,fangs,claws,fur,club,36_The_Fuzzy_Ridge_Runner
+37,The Hairy Finned-Lasher,fin,beady,fangs,claws,fur,tentacles,37_The_Hairy_Finned_Lasher
+38,The Armored Crest-Mace,fin,beady,fangs,claws,scales,club,38_The_Armored_Crest_Mace
+39,The Scaly Reef-Reaper,fin,beady,fangs,claws,scales,tentacles,39_The_Scaly_Reef_Reaper
+40,The Furry River-Platypus,fin,beady,beak,webbed,fur,club,40_The_Furry_River_Platypus
+41,The Hairy Lake-Kraken,fin,beady,beak,webbed,fur,tentacles,41_The_Hairy_Lake_Kraken
+42,The Finned Swamp-Turtle,fin,beady,beak,webbed,scales,club,42_The_Finned_Swamp_Turtle
+43,The Scaly Deep-Snapper,fin,beady,beak,webbed,scales,tentacles,43_The_Scaly_Deep_Snapper
+44,The Crested Forest-Forager,fin,beady,beak,claws,fur,club,44_The_Crested_Forest_Forager
+45,The Hairy Talon-Squid,fin,beady,beak,claws,fur,tentacles,45_The_Hairy_Talon_Squid
+46,The Armored Desert-Finch,fin,beady,beak,claws,scales,club,46_The_Armored_Desert_Finch
+47,The Finned Rock-Slitherer,fin,beady,beak,claws,scales,tentacles,47_The_Finned_Rock_Slitherer
+48,The Hex-Eyed River-Mace,fin,compound,fangs,webbed,fur,club,48_The_Hex_Eyed_River_Mace
+49,The Fuzzy Swamp-Swarm,fin,compound,fangs,webbed,fur,tentacles,49_The_Fuzzy_Swamp_Swarm
+50,The Insectoid Lake-Biter,fin,compound,fangs,webbed,scales,club,50_The_Insectoid_Lake_Biter
+51,The Multi-Seeing Reef-Lurker,fin,compound,fangs,webbed,scales,tentacles,51_The_Multi_Seeing_Reef_Lurker
+52,The Shaggy Spider-Fin,fin,compound,fangs,claws,fur,club,52_The_Shaggy_Spider_Fin
+53,The Hairy Crevice-Crawler,fin,compound,fangs,claws,fur,tentacles,53_The_Hairy_Crevice_Crawler
+54,The Scaly Hex-Pounder,fin,compound,fangs,claws,scales,club,54_The_Scaly_Hex_Pounder
+55,The Armored Bug-Biter,fin,compound,fangs,claws,scales,tentacles,55_The_Armored_Bug_Biter
+56,The Crested Bog-Hummer,fin,compound,beak,webbed,fur,club,56_The_Crested_Bog_Hummer
+57,The Fuzzy Pond-Wasp,fin,compound,beak,webbed,fur,tentacles,57_The_Fuzzy_Pond_Wasp
+58,The Insectoid Swamp-Snapper,fin,compound,beak,webbed,scales,club,58_The_Insectoid_Swamp_Snapper
+59,The Scaly Lake-Mantis,fin,compound,beak,webbed,scales,tentacles,59_The_Scaly_Lake_Mantis
+60,The Hairy Ridge-Buzzard,fin,compound,beak,claws,fur,club,60_The_Hairy_Ridge_Buzzard
+61,The Spider-Eyed Owl-Squid,fin,compound,beak,claws,fur,tentacles,61_The_Spider_Eyed_Owl_Squid
+62,The Armored Hive-Bird,fin,compound,beak,claws,scales,club,62_The_Armored_Hive_Bird
+63,The Finned Canyon-Crawler,fin,compound,beak,claws,scales,tentacles,63_The_Finned_Canyon_Crawler
