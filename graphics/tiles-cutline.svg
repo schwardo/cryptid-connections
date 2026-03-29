@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Delete"
+   width="234pt"
+   height="378pt"
+   version="1.1"
+   viewBox="0 0 234 378"
+   sodipodi:docname="tiles-cutline.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="tile1-back.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview19016"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.93650794"
+     inkscape:cx="226.37288"
+     inkscape:cy="300.58475"
+     inkscape:window-width="1704"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer6"
+     showguides="false" />
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs
+     id="defs17070">
+    <style
+       id="style17068">
+      .st0 {
+        stroke-dasharray: 5.1 5.1;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5 {
+        fill: none;
+      }
+
+      .st0, .st3, .st5 {
+        stroke: #00aced;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .st6 {
+        fill: #221f1f;
+      }
+
+      .st7 {
+        fill: #ed2224;
+      }
+
+      .st1 {
+        stroke: #2ba3dc;
+        stroke-dasharray: 5;
+      }
+
+      .st8, .st9 {
+        fill: #fff;
+      }
+
+      .st2, .st4 {
+        stroke: red;
+      }
+
+      .st9, .st10, .st11, .st12 {
+        fill-rule: evenodd;
+      }
+
+      .st13 {
+        fill: red;
+      }
+
+      .st14 {
+        fill: #e7242c;
+      }
+
+      .st3 {
+        stroke-dasharray: 5.1 5.1;
+      }
+
+      .st15 {
+        fill: #231f20;
+      }
+
+      .st4 {
+        stroke-dasharray: 20 0;
+      }
+
+      .st16, .st11 {
+        fill: #4c4849;
+      }
+
+      .st17 {
+        fill: #2ca1da;
+      }
+
+      .st18 {
+        fill: #e6e5e5;
+      }
+
+      .st12 {
+        fill: #b6d233;
+      }
+    </style>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11094">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse11096"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11094-9">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse11096-2"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath75268">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.92221;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse75270"
+         ry="306.18979"
+         rx="287.45227"
+         cy="254.86223"
+         cx="239.94377" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath11094-2">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse11096-8"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter2402"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="260"
+         result="color1"
+         id="feColorMatrix2398" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix2400" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4398" />
+      <feColorMatrix
+         id="feColorMatrix4400"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix4402"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix4404"
+         type="hueRotate"
+         values="104"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend4406"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix4408"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite4410"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.490674"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend4412"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath22291">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.200606;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse22293"
+         ry="12.47885"
+         rx="11.715198"
+         cy="223.38222"
+         cx="248.84711" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33655">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33653"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath75268-9">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.92221;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse75270-7"
+         ry="306.18979"
+         rx="287.45227"
+         cy="254.86223"
+         cx="239.94377" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33661">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33659"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter2288"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="220"
+         result="color1"
+         id="feColorMatrix2284" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix2286" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4702" />
+      <feColorMatrix
+         id="feColorMatrix4704"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix4706"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix4708"
+         type="hueRotate"
+         values="43"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend4710"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix4712"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite4714"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.379077"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend4716"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33676">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33674"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       inkscape:label="Quadritone fantasy"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render Cyan, Magenta and Yellow channels with a colorizable background"
+       style="color-interpolation-filters:sRGB"
+       id="filter482"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feFlood
+         flood-color="rgb(255,255,255)"
+         result="result6"
+         flood-opacity="0"
+         id="feFlood468" />
+      <feColorMatrix
+         result="result3"
+         values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 -1 0 0 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix470" />
+      <feBlend
+         mode="multiply"
+         in2="result6"
+         result="result7"
+         in="result3"
+         id="feBlend472" />
+      <feColorMatrix
+         result="result2"
+         in="SourceGraphic"
+         values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 -1 0 1 0 "
+         id="feColorMatrix474" />
+      <feBlend
+         result="result4"
+         in="result2"
+         in2="result7"
+         mode="multiply"
+         id="feBlend476" />
+      <feColorMatrix
+         result="result1"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 -1 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix478" />
+      <feBlend
+         in2="result4"
+         mode="multiply"
+         result="fbSourceGraphic"
+         in="result1"
+         id="feBlend480" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix2272" />
+      <feColorMatrix
+         id="feColorMatrix2274"
+         type="hueRotate"
+         values="110"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix2276"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix6478" />
+      <feColorMatrix
+         id="feColorMatrix6480"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix6482"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix6484"
+         type="hueRotate"
+         values="103"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend6486"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix6488"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite6490"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="1"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend6492"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33699">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33697"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       inkscape:label="Quadritone fantasy"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render Cyan, Magenta and Yellow channels with a colorizable background"
+       style="color-interpolation-filters:sRGB"
+       id="filter33737"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feFlood
+         flood-color="rgb(255,255,255)"
+         result="result6"
+         flood-opacity="0"
+         id="feFlood33701" />
+      <feColorMatrix
+         result="result3"
+         values="0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 -1 0 0 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix33703" />
+      <feBlend
+         mode="multiply"
+         in2="result6"
+         result="result7"
+         in="result3"
+         id="feBlend33705" />
+      <feColorMatrix
+         result="result2"
+         in="SourceGraphic"
+         values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 0 -1 0 1 0 "
+         id="feColorMatrix33707" />
+      <feBlend
+         result="result4"
+         in="result2"
+         in2="result7"
+         mode="multiply"
+         id="feBlend33709" />
+      <feColorMatrix
+         result="result1"
+         values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 -1 1 0 "
+         in="SourceGraphic"
+         id="feColorMatrix33711" />
+      <feBlend
+         in2="result4"
+         mode="multiply"
+         result="fbSourceGraphic"
+         in="result1"
+         id="feBlend33713" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33715" />
+      <feColorMatrix
+         id="feColorMatrix33717"
+         type="hueRotate"
+         values="110"
+         result="color1"
+         in="fbSourceGraphic" />
+      <feColorMatrix
+         id="feColorMatrix33719"
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33721" />
+      <feColorMatrix
+         id="feColorMatrix33723"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix33725"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix33727"
+         type="hueRotate"
+         values="103"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend33729"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix33731"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite33733"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="1"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend33735"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath145086">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:11.3998;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse145088"
+         ry="709.13116"
+         rx="665.73535"
+         cy="540.61981"
+         cx="577.59033" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33743">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33741"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter33765"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="260"
+         result="color1"
+         id="feColorMatrix33745" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix33747" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33749" />
+      <feColorMatrix
+         id="feColorMatrix33751"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix33753"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix33755"
+         type="hueRotate"
+         values="104"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend33757"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix33759"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite33761"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.490674"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend33763"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath54105">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:8.2405;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse54107"
+         ry="512.60687"
+         rx="481.23749"
+         cy="603.55109"
+         cx="586.50903" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33771">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33769"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Color Shift"
+       id="filter2360"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="150"
+         result="color1"
+         id="feColorMatrix2356" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="color2"
+         id="feColorMatrix2358" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath75274">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.200606;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse75276"
+         ry="12.47885"
+         rx="11.715198"
+         cy="176.48239"
+         cx="340.89359" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33780">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33778"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter33802"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="220"
+         result="color1"
+         id="feColorMatrix33782" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix33784" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33786" />
+      <feColorMatrix
+         id="feColorMatrix33788"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix33790"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix33792"
+         type="hueRotate"
+         values="43"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend33794"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix33796"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite33798"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.379077"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend33800"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath136795">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.200606;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse136797"
+         ry="12.47885"
+         rx="11.715198"
+         cy="184.29083"
+         cx="296.03934"
+         transform="rotate(-15.679293)" />
+    </clipPath>
+    <inkscape:path-effect
+       effect="fill_between_many"
+       method="originald"
+       linkedpaths="#path66949,0,1"
+       id="path-effect136777"
+       is_visible="true"
+       lpeversion="0"
+       join="true"
+       close="true"
+       autoreverse="true" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath136791">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.159462;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse136793"
+         ry="9.9194689"
+         rx="9.312439"
+         cy="197.48419"
+         cx="249.7056"
+         transform="rotate(-15.679294)" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33811">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33809"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33815">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33813"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Color Shift"
+       id="filter33821"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="150"
+         result="color1"
+         id="feColorMatrix33817" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="color2"
+         id="feColorMatrix33819" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33825">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33823"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter2384"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix2380" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix2382" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix4862" />
+      <feColorMatrix
+         id="feColorMatrix4864"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix4866"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix4868"
+         type="hueRotate"
+         values="0"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend4870"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix4872"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite4874"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.234033"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend4876"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath169952">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:38.7845;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse169954"
+         ry="2412.6169"
+         rx="2264.9749"
+         cy="2461.4138"
+         cx="2510.3921" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath33842">
+      <ellipse
+         style="fill:#ffffff;stroke:none;stroke-width:0.377953;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse33840"
+         cx="31.409883"
+         cy="35.479507"
+         rx="14.152006"
+         ry="15.114142" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Quadritone fantasy"
+       id="filter33864"
+       x="0"
+       y="0"
+       width="1"
+       height="1">
+      <feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix33844" />
+      <feColorMatrix
+         type="saturate"
+         values="1"
+         result="fbSourceGraphic"
+         id="feColorMatrix33846" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33848" />
+      <feColorMatrix
+         id="feColorMatrix33850"
+         in="fbSourceGraphic"
+         type="hueRotate"
+         values="331"
+         result="colormatrix1" />
+      <feColorMatrix
+         id="feColorMatrix33852"
+         type="matrix"
+         values="0.5 0 0.5 0 0 0 1 0 0 0 0.5 0 0.5 0 0 0 0 0 1 0 "
+         result="colormatrix2" />
+      <feColorMatrix
+         id="feColorMatrix33854"
+         type="hueRotate"
+         values="0"
+         result="colormatrix3" />
+      <feBlend
+         in2="colormatrix3"
+         id="feBlend33856"
+         mode="normal"
+         result="blend1" />
+      <feColorMatrix
+         id="feColorMatrix33858"
+         type="matrix"
+         values="2.5 -0.75 -0.75 0 0 -0.75 2.5 -0.75 0 0 -0.75 -0.75 2.5 0 0 0 0 0 1 0 "
+         result="colormatrix4" />
+      <feComposite
+         in2="blend1"
+         id="feComposite33860"
+         in="colormatrix4"
+         operator="arithmetic"
+         k2="0.234033"
+         result="composite1"
+         k1="0"
+         k3="0"
+         k4="0" />
+      <feBlend
+         in2="blend1"
+         id="feBlend33862"
+         mode="normal"
+         result="blend2" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath169958">
+      <ellipse
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.41125;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="ellipse169960"
+         ry="274.40536"
+         rx="257.61292"
+         cy="261.71451"
+         cx="261.63742" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Cutlines"
+     style="display:inline">
+    <g
+       id="g156527"
+       transform="translate(0,181.49998)">
+      <path
+         id="path156519"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="M 115.08376,181.00857 A 88.676682,81.636772 0 0 1 26.407079,99.371799" />
+      <path
+         id="path156521"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 204.51194,99.371799 v 0 a 88.676682,81.636772 0 0 1 -88.67668,81.636771" />
+      <path
+         id="path156523"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 115.83526,16.983527 a 88.676682,81.636772 0 0 1 88.67668,81.636772" />
+      <path
+         id="path156525"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 26.407079,98.620299 c 0,-45.086744 39.701902,-81.636771 88.676681,-81.636772"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <g
+       id="g156517">
+      <path
+         id="path100667"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="M 115.08376,181.00857 A 88.676682,81.636772 0 0 1 26.407079,99.371799" />
+      <path
+         id="path156506"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 204.51194,99.371799 v 0 a 88.676682,81.636772 0 0 1 -88.67668,81.636771" />
+      <path
+         id="path156495"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 115.83526,16.983527 a 88.676682,81.636772 0 0 1 88.67668,81.636772" />
+      <path
+         id="path156503"
+         style="fill:none;fill-opacity:0.965365;stroke:#ff0000;stroke-width:0.388098;stroke-linecap:butt;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+         d="m 26.407079,98.620299 c 0,-45.086744 39.701902,-81.636771 88.676681,-81.636772"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>
