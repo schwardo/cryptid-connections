@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg18588"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview18590"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="397.16269"
+     inkscape:cy="309.76311"
+     inkscape:window-width="1704"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs18585">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter14201"
+       x="-0.04386781"
+       y="-0.015439774"
+       width="1.1060139"
+       height="1.0373128">
+      <feFlood
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood14191" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite14193" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="1"
+         result="blur"
+         id="feGaussianBlur14195" />
+      <feOffset
+         dx="1"
+         dy="1"
+         result="offset"
+         id="feOffset14197" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite14199" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Clean Edges"
+       id="filter14365"
+       x="-0.024100452"
+       y="-0.0064715199"
+       width="1.0482009"
+       height="1.012943">
+      <feGaussianBlur
+         stdDeviation="0.4"
+         result="blur"
+         id="feGaussianBlur14359" />
+      <feComposite
+         in="SourceGraphic"
+         in2="blur"
+         operator="in"
+         result="composite1"
+         id="feComposite14361" />
+      <feComposite
+         in="composite1"
+         in2="composite1"
+         operator="in"
+         result="composite2"
+         id="feComposite14363" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g6296"
+       transform="matrix(0.31504741,0,0,0.31504741,-73.489525,-75.182805)">
+      <rect
+         style="fill:#121212;fill-opacity:0.874286;stroke:none;stroke-width:0.47562;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.951241, 2.85372;paint-order:stroke fill markers;filter:url(#filter14201)"
+         id="rect13466"
+         width="54.70982"
+         height="155.44269"
+         x="550.25427"
+         y="364.7081"
+         ry="2.0586231"
+         transform="rotate(-90,361.12537,487.34709)" />
+      <g
+         id="g13836"
+         transform="matrix(0,-0.95124057,0.95124057,0,189.36441,609.31758)"
+         style="filter:url(#filter14365)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;word-spacing:0px;fill:#808080;stroke:none"
+           x="57.942226"
+           y="-353.94888"
+           id="text13410"
+           transform="rotate(90)"><tspan
+             sodipodi:role="line"
+             id="tspan13408"
+             x="57.942226"
+             y="-353.94888">CRYPTID</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18px;line-height:1.25;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;word-spacing:0px;fill:#808080;stroke:none"
+           x="59.051189"
+           y="-336.1413"
+           id="text13464"
+           transform="rotate(90)"><tspan
+             sodipodi:role="line"
+             id="tspan13462"
+             x="59.051189"
+             y="-336.1413">CONNECTIONS</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
