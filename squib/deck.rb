@@ -30,6 +30,13 @@ Squib::Deck.new cards: data['title'].size, layout: 'layout.yml' do
        x: (total_width-title_width)/2, y: 100, width: title_width, height: title_height,
        font: font, font_size: 7, color: text_color, align: :center, valign: :middle
 
+  # Flavor text (from CSV data)
+  title_width = 600
+  title_height = 140
+  text str: data['flavor_text'],
+       x: (total_width-title_width)/2, y: 850, width: title_width, height: title_height,
+       font: font, font_size: 5, color: "#000000", align: :center, valign: :middle
+
   # Draw all icons on top (foreground layer) with slight overlap onto center image
   (1..6).each do |i|
     attr = categories[i-1]

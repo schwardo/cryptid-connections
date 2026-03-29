@@ -1,65 +1,65 @@
-id,title,head,eyes,mouth,hands,skin,tail,image_filename
-00,Foul Mud-Mace,bone,beady,fangs,webbed,fur,club,00_Foul_Mud_Mace
-01,Swamp Strangler,bone,beady,fangs,webbed,fur,tentacles,01_Swamp_Strangler
-02,Scaly Mire-Smasher,bone,beady,fangs,webbed,scales,club,02_Scaly_Mire_Smasher
-03,The Armored Kelp-Fiend,bone,beady,fangs,webbed,scales,tentacles,03_The_Armored_Kelp_Fiend
-04,Shaggy Mountain-Pounder,bone,beady,fangs,claws,fur,club,04_Shaggy_Mountain_Pounder
-05,Hairy Cave-Kraken,bone,beady,fangs,claws,fur,tentacles,05_Hairy_Cave_Kraken
-06,The Obsidian Bone-Basher,bone,beady,fangs,claws,scales,club,06_The_Obsidian_Bone_Basher
-07,Slithering Rock-Biter,bone,beady,fangs,claws,scales,tentacles,07_Slithering_Rock_Biter
-08,Furry River-Snapper,bone,beady,beak,webbed,fur,club,08_Furry_River_Snapper
-09,The Webbed Pond-Reaper,bone,beady,beak,webbed,fur,tentacles,09_The_Webbed_Pond_Reaper
-10,The Riverbed Bone-Tail,bone,beady,beak,webbed,scales,club,10_The_Riverbed_Bone_Tail
-11,Squid-Beak of the Mire,bone,beady,beak,webbed,scales,tentacles,11_Squid_Beak_of_the_Mire
-12,Fuzzy Peak-Chomper,bone,beady,beak,claws,fur,club,12_Fuzzy_Peak_Chomper
-13,The Hairy Cliff-Ripper,bone,beady,beak,claws,fur,tentacles,13_The_Hairy_Cliff_Ripper
-14,Gravel-Gum Smasher,bone,beady,beak,claws,scales,club,14_Gravel_Gum_Smasher
-15,The Scaly Canyon-Squid,bone,beady,beak,claws,scales,tentacles,15_The_Scaly_Canyon_Squid
-16,The Hex-Eyed Swamp-Dog,bone,compound,fangs,webbed,fur,club,16_The_Hex_Eyed_Swamp_Dog
-17,The Fuzzy Pond-Watcher,bone,compound,fangs,webbed,fur,tentacles,17_The_Fuzzy_Pond_Watcher
-18,The Multi-Seeing Mire-Mace,bone,compound,fangs,webbed,scales,club,18_The_Multi_Seeing_Mire_Mace
-19,The Scale-Flasher of the Deep,bone,compound,fangs,webbed,scales,tentacles,19_The_Scale_Flasher_of_the_Deep
-20,Spider-Eyed Ridge-Wolf,bone,compound,fangs,claws,fur,club,20_Spider_Eyed_Ridge_Wolf
-21,The Arachnid Ape-Fiend,bone,compound,fangs,claws,fur,tentacles,21_The_Arachnid_Ape_Fiend
-22,The Armored Hex-Biter,bone,compound,fangs,claws,scales,club,22_The_Armored_Hex_Biter
-23,The Scaly Vine-Lurker,bone,compound,fangs,claws,scales,tentacles,23_The_Scaly_Vine_Lurker
-24,The Buzzing Bog-Bird,bone,compound,beak,webbed,fur,club,24_The_Buzzing_Bog_Bird
-25,The Fuzzy Frog-Squid,bone,compound,beak,webbed,fur,tentacles,25_The_Fuzzy_Frog_Squid
-26,The Insectoid River-Smasher,bone,compound,beak,webbed,scales,club,26_The_Insectoid_River_Smasher
-27,The Glistening Pond-Stalker,bone,compound,beak,webbed,scales,tentacles,27_The_Glistening_Pond_Stalker
-28,The Shaggy Owl-Mace,bone,compound,beak,claws,fur,club,28_The_Shaggy_Owl_Mace
-29,The Highland Spider-Beak,bone,compound,beak,claws,fur,tentacles,29_The_Highland_Spider_Beak
-30,The Armored Bug-Bird,bone,compound,beak,claws,scales,club,30_The_Armored_Bug_Bird
-31,The Reptilian Hex-Ripper,bone,compound,beak,claws,scales,tentacles,31_The_Reptilian_Hex_Ripper
-32,The Crested Otter-Smasher,fin,beady,fangs,webbed,fur,club,32_The_Crested_Otter_Smasher
-33,The Shaggy Sea-Serpent,fin,beady,fangs,webbed,fur,tentacles,33_The_Shaggy_Sea_Serpent
-34,The Finned Lake-Pounder,fin,beady,fangs,webbed,scales,club,34_The_Finned_Lake_Pounder
-35,The Scaly Coral-Biter,fin,beady,fangs,webbed,scales,tentacles,35_The_Scaly_Coral_Biter
-36,The Fuzzy Ridge-Runner,fin,beady,fangs,claws,fur,club,36_The_Fuzzy_Ridge_Runner
-37,The Hairy Finned-Lasher,fin,beady,fangs,claws,fur,tentacles,37_The_Hairy_Finned_Lasher
-38,The Armored Crest-Mace,fin,beady,fangs,claws,scales,club,38_The_Armored_Crest_Mace
-39,The Scaly Reef-Reaper,fin,beady,fangs,claws,scales,tentacles,39_The_Scaly_Reef_Reaper
-40,The Furry River-Platypus,fin,beady,beak,webbed,fur,club,40_The_Furry_River_Platypus
-41,The Hairy Lake-Kraken,fin,beady,beak,webbed,fur,tentacles,41_The_Hairy_Lake_Kraken
-42,The Finned Swamp-Turtle,fin,beady,beak,webbed,scales,club,42_The_Finned_Swamp_Turtle
-43,The Scaly Deep-Snapper,fin,beady,beak,webbed,scales,tentacles,43_The_Scaly_Deep_Snapper
-44,The Crested Forest-Forager,fin,beady,beak,claws,fur,club,44_The_Crested_Forest_Forager
-45,The Hairy Talon-Squid,fin,beady,beak,claws,fur,tentacles,45_The_Hairy_Talon_Squid
-46,The Armored Desert-Finch,fin,beady,beak,claws,scales,club,46_The_Armored_Desert_Finch
-47,The Finned Rock-Slitherer,fin,beady,beak,claws,scales,tentacles,47_The_Finned_Rock_Slitherer
-48,The Hex-Eyed River-Mace,fin,compound,fangs,webbed,fur,club,48_The_Hex_Eyed_River_Mace
-49,The Fuzzy Swamp-Swarm,fin,compound,fangs,webbed,fur,tentacles,49_The_Fuzzy_Swamp_Swarm
-50,The Insectoid Lake-Biter,fin,compound,fangs,webbed,scales,club,50_The_Insectoid_Lake_Biter
-51,The Multi-Seeing Reef-Lurker,fin,compound,fangs,webbed,scales,tentacles,51_The_Multi_Seeing_Reef_Lurker
-52,The Shaggy Spider-Fin,fin,compound,fangs,claws,fur,club,52_The_Shaggy_Spider_Fin
-53,The Hairy Crevice-Crawler,fin,compound,fangs,claws,fur,tentacles,53_The_Hairy_Crevice_Crawler
-54,The Scaly Hex-Pounder,fin,compound,fangs,claws,scales,club,54_The_Scaly_Hex_Pounder
-55,The Armored Bug-Biter,fin,compound,fangs,claws,scales,tentacles,55_The_Armored_Bug_Biter
-56,The Crested Bog-Hummer,fin,compound,beak,webbed,fur,club,56_The_Crested_Bog_Hummer
-57,The Fuzzy Pond-Wasp,fin,compound,beak,webbed,fur,tentacles,57_The_Fuzzy_Pond_Wasp
-58,The Insectoid Swamp-Snapper,fin,compound,beak,webbed,scales,club,58_The_Insectoid_Swamp_Snapper
-59,The Scaly Lake-Mantis,fin,compound,beak,webbed,scales,tentacles,59_The_Scaly_Lake_Mantis
-60,The Hairy Ridge-Buzzard,fin,compound,beak,claws,fur,club,60_The_Hairy_Ridge_Buzzard
-61,The Spider-Eyed Owl-Squid,fin,compound,beak,claws,fur,tentacles,61_The_Spider_Eyed_Owl_Squid
-62,The Armored Hive-Bird,fin,compound,beak,claws,scales,club,62_The_Armored_Hive_Bird
-63,The Finned Canyon-Crawler,fin,compound,beak,claws,scales,tentacles,63_The_Finned_Canyon_Crawler
+id,title,head,eyes,mouth,hands,skin,tail,image_filename,flavor_text
+00,Foul Mud-Mace,bone,beady,fangs,webbed,fur,club,00_Foul_Mud_Mace,"Seek the twin skull-visages shrouded in bog-muck; their haunting green eyes are your only guide. But beware the brutal, bone-spiked tail that thrashes from the mire."
+01,Swamp Strangler,bone,beady,fangs,webbed,fur,tentacles,01_Swamp_Strangler,Its moss-laden fur camouflages it perfectly. Look for those eerie purple eyes in the fog; they signal the Strangler's approach before its webbed claws and unseen tentacles drag you to your doom.
+02,Scaly Mire-Smasher,bone,beady,fangs,webbed,scales,club,02_Scaly_Mire_Smasher,"Its skull-face is no mere bone, but petrified swamp-dread, with glowing eyes that mock the living. Beware the Mire-Smasher's rock-club tail; its impact precedes the silence."
+03,The Armored Kelp-Fiend,bone,beady,fangs,webbed,scales,tentacles,03_The_Armored_Kelp_Fiend,"Its skeletal face and kelp-armor are a perfect disguise, but the eerie purple glow in its eyes gives it away. Beware its antler-horns and the crushing grip of its numerous tentacles."
+04,Shaggy Mountain-Pounder,bone,beady,fangs,claws,fur,club,04_Shaggy_Mountain_Pounder,"Beware the high peaks: if you hear the ground crack beneath a thunderous tread, look for the ancient skull-face and its glowing red eyes. Its bone-spiked tail can shatter rock."
+05,Hairy Cave-Kraken,bone,beady,fangs,claws,fur,tentacles,05_Hairy_Cave_Kraken,"The cave itself snarled, a furred horror with a skull for a face and eyes of hellfire, its tentacles dragging through the water."" - A rare survivor's chilling account."
+06,The Obsidian Bone-Basher,bone,beady,fangs,claws,scales,club,06_The_Obsidian_Bone_Basher,"Its skull-like visage isn't a mask, but bone grown from within. A lone, hateful purple glow in its eye socket is the last thing you'll see before its obsidian tail shatters your resolve."
+07,Slithering Rock-Biter,bone,beady,fangs,claws,scales,tentacles,07_Slithering_Rock_Biter,"Its glowing eyes and bone-white mask are often the first, and last, warning. Don't mistake a shifting pile of rock for inert stone; its grasping tendrils lurk beneath."
+08,Furry River-Snapper,bone,beady,beak,webbed,fur,club,08_Furry_River_Snapper,"Its most chilling feature is its skull-like head, not a mask, but its true visage, with glowing orange eyes that pierce the mist. Should you spot those infernal embers know you've been observed by something ancient and hungry."
+09,The Webbed Pond-Reaper,bone,beady,beak,webbed,fur,tentacles,09_The_Webbed_Pond_Reaper,"Heard it before I saw it, a rhythmic slosh in the muck; then, those glowing crimson eyes pierced the mist, its webbed hand gripping a cruel, barbed scythe as its tentacled tail churned the black water."
+10,The Riverbed Bone-Tail,bone,beady,beak,webbed,scales,club,10_The_Riverbed_Bone_Tail,"Heard a survivor once claim it wasn't scales, but bones that made up its face, its eyes glowing like marsh gas in a hollow skull. That ghastly visage, carved from the riverbed itself, is often the last thing seen before its crushing tail emerges from the murk."
+11,Squid-Beak of the Mire,bone,beady,beak,webbed,scales,tentacles,11_Squid_Beak_of_the_Mire,"The Mire's whispers tell of the Squid-Beak, a living relic where ancient swamp horrors and abyssal terror converge. Spotting it means those hollow, crimson eyes have already marked you, and its dripping beak is merely the prelude to a silent, crushing end."
+12,Fuzzy Peak-Chomper,bone,beady,beak,claws,fur,club,12_Fuzzy_Peak_Chomper,Don't mistake its skull-face for death; those glowing eyes seek living peaks. Listen for the crunch of rock—the sound of mountains reshaping under its stony beak.
+13,The Hairy Cliff-Ripper,bone,beady,beak,claws,fur,tentacles,13_The_Hairy_Cliff_Ripper,"They say, 'The mountain itself tears open when its burning skull-eyes find you.' Look for crumbling rock and the unnatural sight of writhing purple tentacles."
+14,Gravel-Gum Smasher,bone,beady,beak,claws,scales,club,14_Gravel_Gum_Smasher,"Its skull-face appears carved from ancient rock, eyes burning with primeval hunger. Listen for the gravel-chewing before its powerful, club-like tail smashes you flat."
+15,The Scaly Canyon-Squid,bone,beady,beak,claws,scales,tentacles,15_The_Scaly_Canyon_Squid,"I only saw its glowing red eyes in the dark, then the canyon walls moved with those crawling limbs and that bony, hateful grin."
+16,The Hex-Eyed Swamp-Dog,bone,compound,fangs,webbed,fur,club,16_The_Hex_Eyed_Swamp_Dog,"Don't seek the Hex-Eyed Swamp-Dog; its glowing, insectile eyes gaze from a skull that knows no fear, and its spiked tail delivers a venomous farewell."
+17,The Fuzzy Pond-Watcher,bone,compound,fangs,webbed,fur,tentacles,17_The_Fuzzy_Pond_Watcher,"Its eyes, those awful fly-eyes in a hollow skull, they saw everything. Then the tentacles wrapped around the canoe."" —A survivor. Its shaggy hide blends perfectly with moss-draped trees."
+18,The Multi-Seeing Mire-Mace,bone,compound,fangs,webbed,scales,club,18_The_Multi_Seeing_Mire_Mace,"He swore its skull-face had too many eyes, but the true terror was the silent thud of its mace-tail, shattering everything in its path through the mire."
+19,The Scale-Flasher of the Deep,bone,compound,fangs,webbed,scales,tentacles,19_The_Scale_Flasher_of_the_Deep,"Its skeletal face, with eyes like a thousand flashing scales, is the last thing you'll see before its tentacles claim you for the deep."
+20,Spider-Eyed Ridge-Wolf,bone,compound,fangs,claws,fur,club,20_Spider_Eyed_Ridge_Wolf,"Never try to hide; its spider-eyes miss nothing. Instead, watch for the tell-tale gouges its bony back leaves on ancient trees."
+21,The Arachnid Ape-Fiend,bone,compound,fangs,claws,fur,tentacles,21_The_Arachnid_Ape_Fiend,"Beware its skull-like visage and the cosmic horror in its multiple eyes. If you see movement like a dozen snakes in the canopy, it's already too late."
+22,The Armored Hex-Biter,bone,compound,fangs,claws,scales,club,22_The_Armored_Hex_Biter,"Its bone-plated head and shimmering compound eyes can pierce through reality itself. Listen for the crunch of stone, then pray it's only a rockslide."
+23,The Scaly Vine-Lurker,bone,compound,fangs,claws,scales,tentacles,23_The_Scaly_Vine_Lurker,"Listen for the soft rasp of scales on bark, but look for the glint of its multifaceted eyes. Its bone-like skull and grasping tentacles let it blend perfectly with ancient, gnarled vines."
+24,The Buzzing Bog-Bird,bone,compound,beak,webbed,fur,club,24_The_Buzzing_Bog_Bird,"I saw its empty skull stare, those purple eyes burning through the mist, then heard the buzz. That tail nearly took my leg clean off."" - Survivor's account."
+25,The Fuzzy Frog-Squid,bone,compound,beak,webbed,fur,tentacles,25_The_Fuzzy_Frog_Squid,"Its skeletal face and glowing purple eyes betray its otherworldly origin. Follow the strange, bioluminescent fungi in the murky depths, but beware the grasp of its unseen tentacles."
+26,The Insectoid River-Smasher,bone,compound,beak,webbed,scales,club,26_The_Insectoid_River_Smasher,Its skull-face and glowing purple eyes herald more than just a beast; it's a vanguard. The true terror lies in the hidden eyes that follow its wake.
+27,The Glistening Pond-Stalker,bone,compound,beak,webbed,scales,tentacles,27_The_Glistening_Pond_Stalker,"Its glistening scales blend with the muck, but its antlered skull, with eyes like drowned jewels, is unmistakable. Beware the silent ripple of its tentacled tails."
+28,The Shaggy Owl-Mace,bone,compound,beak,claws,fur,club,28_The_Shaggy_Owl_Mace,"Its skull-like face masks compound eyes that see all. You won't hear it, but a faint hum precedes its gaze, then that bony mace tail strikes faster than sound."
+29,The Highland Spider-Beak,bone,compound,beak,claws,fur,tentacles,29_The_Highland_Spider_Beak,"Heed the weeping ichor trails and the unnatural silence. If you see those many spider-eyes gleaming from a skull-face in the mist, its grasping tentacles are already near."
+30,The Armored Bug-Bird,bone,compound,beak,claws,scales,club,30_The_Armored_Bug_Bird,"He warned me, 'When those thousand green eyes fix on you from the shadows, you'll know fear. It wears a skull for a face, and moves like living stone."
+31,The Reptilian Hex-Ripper,bone,compound,beak,claws,scales,tentacles,31_The_Reptilian_Hex_Ripper,"Its skeletal visage and compound eyes betray no life, yet it moves with unnatural purpose. Seek out the shadows that writhe behind it; the Hex-Ripper's dark tendrils are its true weapon."
+32,The Crested Otter-Smasher,fin,beady,fangs,webbed,fur,club,32_The_Crested_Otter_Smasher,"Don't mistake its eerie, glowing eyes for a reflection. That vibrant crest signals its hunting ground, where its armored tail can splinter wood and bone."
+33,The Shaggy Sea-Serpent,fin,beady,fangs,webbed,fur,tentacles,33_The_Shaggy_Sea_Serpent,"They say its shaggy hide is woven from lost souls, its glowing eyes the last thing sailors see before its webbed claws and unseen tentacles pull them into the abyssal depths."
+34,The Finned Lake-Pounder,fin,beady,fangs,webbed,scales,club,34_The_Finned_Lake_Pounder,"Look for unnatural ripples betraying its submerged tail. Should you see its glowing crimson eyes or the warning flash of its fins, you're already too close."
+35,The Scaly Coral-Biter,fin,beady,fangs,webbed,scales,tentacles,35_The_Scaly_Coral_Biter,"Its glowing eyes are like molten coral in the deep. A survivor whispered, ""It doesn't just bite coral; it is the reef's hungry, scaled vengeance."
+36,The Fuzzy Ridge-Runner,fin,beady,fangs,claws,fur,club,36_The_Fuzzy_Ridge_Runner,"Its glowing eyes cut through the mist, but heed the scrape of its stony tail. Those blood-red fins and spined back mark the Fuzzy Ridge-Runner, a terror of the peaks."
+37,The Hairy Finned-Lasher,fin,beady,fangs,claws,fur,tentacles,37_The_Hairy_Finned_Lasher,"Don't mistake its bear-like lumber for a common beast. Those glowing, reptilian eyes and thrashing purple tentacles mark the Hairy Finned-Lasher as a swamp's primal horror."
+38,The Armored Crest-Mace,fin,beady,fangs,claws,scales,club,38_The_Armored_Crest_Mace,Its glowing eyes are the last warning before its fanged maw strikes or its armored mace-tail shatters bone. That vibrant crest is merely a cruel lure.
+39,The Scaly Reef-Reaper,fin,beady,fangs,claws,scales,tentacles,39_The_Scaly_Reef_Reaper,"Beware shifting coral; the Scaly Reef-Reaper's vibrant hide and tentacled form let it vanish. Only its predatory, glowing eyes and monstrous claws hint at the reef's true hunter."
+40,The Furry River-Platypus,fin,beady,beak,webbed,fur,club,40_The_Furry_River_Platypus,"That impossible bill, those glowing eyes... it moved with unnatural speed, its teal spines slicing the air, before that plated tail dragged him under."
+41,The Hairy Lake-Kraken,fin,beady,beak,webbed,fur,tentacles,41_The_Hairy_Lake_Kraken,"Listen for the splash, but look for the glowing eyes and iridescent fins in the mist. Its webbed, sucker-covered hands and tentacled tail will ensure you never surface."
+42,The Finned Swamp-Turtle,fin,beady,beak,webbed,scales,club,42_The_Finned_Swamp_Turtle,"Don't trust the placid water; look for unnatural bubbles. Its glowing eyes are a death sentence, and that finned head and spiked tail club mean you're already too close."
+43,The Scaly Deep-Snapper,fin,beady,beak,webbed,scales,tentacles,43_The_Scaly_Deep_Snapper,"Track it by the impossible golden glow of its eyes through the murk. Its roots are tentacles, its maw a snapping beak; feel its grasp, and you're already gone."
+44,The Crested Forest-Forager,fin,beady,beak,claws,fur,club,44_The_Crested_Forest_Forager,"Its glowing eyes are haunting, but note the odd, fleshy fins behind its crest. They whisper it's a creature of both deep woods and hidden waterways, best avoided when the mists roll in."
+45,The Hairy Talon-Squid,fin,beady,beak,claws,fur,tentacles,45_The_Hairy_Talon_Squid,"Track it by the iridescent fins and glowing eyes in sea mist. When those talons grip the rocks and its dark tentacles slither, you've found its lair."
+46,The Armored Desert-Finch,fin,beady,beak,claws,scales,club,46_The_Armored_Desert_Finch,Don't let the name fool you. That 'finch' is a walking mountain of rock and malice. Track the shifting desert floor; its glowing eyes are the only warning before the ground itself attacks.
+47,The Finned Rock-Slitherer,fin,beady,beak,claws,scales,tentacles,47_The_Finned_Rock_Slitherer,"Those glowing eyes lure you in, but its vibrant fins are only a warning. It's the unseen tentacles, rooted in the falls, that will drag you down to its watery lair."
+48,The Hex-Eyed River-Mace,fin,compound,fangs,webbed,fur,club,48_The_Hex_Eyed_River_Mace,"A survivor whispered, 'Its hex-eyes held me, shimmering with alien light, just before that crushing mace-tail took my leg."
+49,The Fuzzy Swamp-Swarm,fin,compound,fangs,webbed,fur,tentacles,49_The_Fuzzy_Swamp_Swarm,"They say the Fuzzy Swamp-Swarm isn't one creature, but a fusion of the marsh's horrors: fur, iridescent fins, and grasping tentacles, all beneath those terrible glowing eyes."
+50,The Insectoid Lake-Biter,fin,compound,fangs,webbed,scales,club,50_The_Insectoid_Lake_Biter,"Those compound eyes shimmer like a thousand dark jewels in the moonlit bog, but it's the barbed tail following them you truly need to fear."
+51,The Multi-Seeing Reef-Lurker,fin,compound,fangs,webbed,scales,tentacles,51_The_Multi_Seeing_Reef_Lurker,"Beware its eight glowing eyes. When the reef itself seems to watch, and shadows writhe like unseen tentacles, the Lurker is near. Its gaze sees all."
+52,The Shaggy Spider-Fin,fin,compound,fangs,claws,fur,club,52_The_Shaggy_Spider_Fin,"Its compound eyes pierce the deepest fog, reflecting the bioluminescent fungi of its swampy lairs. Beware the thud of its spiked tail—it marks its territory with splintered trees."
+53,The Hairy Crevice-Crawler,fin,compound,fangs,claws,fur,tentacles,53_The_Hairy_Crevice_Crawler,"Look for glowing, segmented eyes in the deepest crevices, but listen for the wet rasp of its purple tendrils as they adhere to stone, pulling it upwards."
+54,The Scaly Hex-Pounder,fin,compound,fangs,claws,scales,club,54_The_Scaly_Hex_Pounder,"Its glowing, hex-like purple eyes pierce the swamp's gloom. If you see them, prepare for its armored tail to pound you into the muck."
+55,The Armored Bug-Biter,fin,compound,fangs,claws,scales,tentacles,55_The_Armored_Bug_Biter,"I swore the jungle itself watched me, its roots writhing before those compound eyes opened. It wasn't until the tusks lunged that I knew the vines had teeth."
+56,The Crested Bog-Hummer,fin,compound,beak,webbed,fur,club,56_The_Crested_Bog_Hummer,"They say its low hum lures prey, but it's the unsettling shimmer of its alien eyes you should truly fear. See them, and its spiny tail strikes."
+57,The Fuzzy Pond-Wasp,fin,compound,beak,webbed,fur,tentacles,57_The_Fuzzy_Pond_Wasp,"Those eyes... they saw everything, even through the moss. Then the water grabbed me."" The Fuzzy Pond-Wasp's iridescent crest is a deceptive lure; look for the grasping webbed hands before the tentacles drag you down."
+58,The Insectoid Swamp-Snapper,fin,compound,beak,webbed,scales,club,58_The_Insectoid_Swamp_Snapper,"Look for ancient roots that seem to shift, but beware its multifaceted gaze. ""I only saw its glowing eyes in the mist,"" one survivor whispered, ""then its shell rose from the muck."
+59,The Scaly Lake-Mantis,fin,compound,beak,webbed,scales,tentacles,59_The_Scaly_Lake_Mantis,"Look for the unblinking purple eyes in the mist, but listen for the subtle hum. Those hand-pads don't just grip; they sense your very heartbeat through the murky water."
+60,The Hairy Ridge-Buzzard,fin,compound,beak,claws,fur,club,60_The_Hairy_Ridge_Buzzard,Seek the eerie shimmer in the murk; its multifaceted eyes reflect all. But beware the rasping scrape of its ridged tail before you see those cerulean crests.
+61,The Spider-Eyed Owl-Squid,fin,compound,beak,claws,fur,tentacles,61_The_Spider_Eyed_Owl_Squid,"Don't look for the owl-squid, look for its perch. Those hollow shells aren't barnacles; they're what's left after its hundred eyes have seen enough."
+62,The Armored Hive-Bird,fin,compound,beak,claws,scales,club,62_The_Armored_Hive_Bird,"Don't seek its bark-like scales; find the shimmer in its insectile eyes. If the forest reflects too perfectly in those multifaceted orbs, you're already caught by the Armored Hive-Bird's gaze."
+63,The Finned Canyon-Crawler,fin,compound,beak,claws,scales,tentacles,63_The_Finned_Canyon_Crawler,"Beware the purple-eyed horror whose scaled body clings to stone, while its frilled head flares and serpentine tails writhe in the canyon's dark."
