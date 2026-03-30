@@ -154,3 +154,9 @@ When an expedition ends without a winner:
 - **Additional Sightings are key:** A well-timed flip or swap can transform a weak hand into a winning one. Think about which changes help your remaining cryptids while hurting opponents.
 - **Watch the endgame:** As players approach 10 points, sudden death tension rises. Controlling Slot 1 becomes critical.
 - **Drafting trade-offs:** By drafting first it may feel like you're just choosing tiebreakers, but you're choosing which traits **will not** be eligible to be in the first few spots which is a key decision.
+
+---
+
+## Credits and Disclosures
+
+Cryptid Connections was created by Don Schwarz, in partnership with Gemini 3.1 and Claude Opus 4.6.  The primary mechanic of judging a trick-taking game by measuring similarity by using a set of binary attributes in a specific order was created by Don Schwarz.  The theme and traits were decided upon during discussions with Gemini.  The titles of the cards, cart art, and flavor text were created by Gemini.  The graphic design was done using a combination of image generation abilities in Gemini, and composition using Squib.  The Antigravity IDE was used to configure Squib and create various scripts to generate the cards and rules, and to create a web version of the game for playtesting.  Claude Opus 4.6 was used to proof-read the rules and suggest improvements.
