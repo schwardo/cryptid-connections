@@ -1226,6 +1226,11 @@
                 return { primary, tiebreak: top2Avg - allCardAvg };
             }
 
+            // Evaluate baseline tiebreak for skip (so skip isn't unfairly beaten)
+            if (isStrategic) {
+                bestTiebreak = evaluateCandidate(sightingReportSlots).tiebreak;
+            }
+
             function tryMove(simSlots, move) {
                 let { primary, tiebreak } = evaluateCandidate(simSlots);
                 if (primary > bestScore || (primary === bestScore && isStrategic && tiebreak > bestTiebreak)) {
