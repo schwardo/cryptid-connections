@@ -1184,25 +1184,56 @@
             });
         }
 
-        function aiAlterChoice(player, lastAction) {
-            const evaluateState = (slots) => {
-                let maxScore = -1;
-                for (let c of player.hand) {
-                    let score = 0;
-                    for (let slot = 0; slot < 6; slot++) {
-                        let r = slots[slot];
-                        if (!r) continue;
-                        if (c.traits[r.tileIndex] === r.side) {
-                            score += Math.pow(10, 5 - slot);
-                        } else { break; }
-                    }
-                    if (score > maxScore) maxScore = score;
+        function scoreCardForSlots(card, slots) {
+            // Weighted by slot importance: slot 1=32, slot 2=16, ..., slot 6=1
+            // Counts all matching slots (no break on mismatch) for better AI heuristic
+            let score = 0;
+            for (let slot = 0; slot < 6; slot++) {
+                let r = slots[slot];
+                if (!r) continue;
+                if (card.traits[r.tileIndex] === r.side) {
+                    score += (1 << (5 - slot));
                 }
-                return maxScore;
-            };
+            }
+            return score;
+        }
 
+        function bestCardScore(hand, slots) {
+            let max = -1;
+            for (let c of hand) {
+                let s = scoreCardForSlots(c, slots);
+                if (s > max) max = s;
+            }
+            return max;
+        }
+
+        function aiAlterChoice(player, lastAction) {
             let bestMove = { type: 'skip' };
-            let bestScore = evaluateState(sightingReportSlots);
+            let bestScore = bestCardScore(player.hand, sightingReportSlots);
+            let bestTiebreak = -Infinity;
+
+            const isStrategic = player.aiStrategy === 'strategic';
+
+            function evaluateCandidate(simSlots) {
+                let primary = bestCardScore(player.hand, simSlots);
+                if (!isStrategic) return { primary, tiebreak: 0 };
+                // Strategic tiebreaker: top-2 average minus all-card average
+                let scores = player.hand.map(c => scoreCardForSlots(c, simSlots)).sort((a, b) => b - a);
+                let top2Avg = (scores[0] + (scores[1] || 0)) / Math.min(2, scores.length);
+                let allCardTotal = 0;
+                for (let i = 0; i < 64; i++) allCardTotal += scoreCardForSlots(DECK[i], simSlots);
+                let allCardAvg = allCardTotal / 64;
+                return { primary, tiebreak: top2Avg - allCardAvg };
+            }
+
+            function tryMove(simSlots, move) {
+                let { primary, tiebreak } = evaluateCandidate(simSlots);
+                if (primary > bestScore || (primary === bestScore && isStrategic && tiebreak > bestTiebreak)) {
+                    bestScore = primary;
+                    bestTiebreak = tiebreak;
+                    bestMove = move;
+                }
+            }
 
             // Consider Flips
             for (let i = 0; i < 6; i++) {
@@ -1210,11 +1241,7 @@
                 if (lastAction && lastAction.type === 'flip' && lastAction.slotIdx === i) continue;
                 let simSlots = JSON.parse(JSON.stringify(sightingReportSlots));
                 simSlots[i].side = 1 - simSlots[i].side;
-                let score = evaluateState(simSlots);
-                if (score > bestScore) {
-                    bestScore = score;
-                    bestMove = { type: 'flip', slotIdx: i };
-                }
+                tryMove(simSlots, { type: 'flip', slotIdx: i });
             }
 
             // Consider Swaps
@@ -1226,11 +1253,7 @@
                         let temp = simSlots[i];
                         simSlots[i] = simSlots[j];
                         simSlots[j] = temp;
-                        let score = evaluateState(simSlots);
-                        if (score > bestScore) {
-                            bestScore = score;
-                            bestMove = { type: 'swap', slot1: i, slot2: j };
-                        }
+                        tryMove(simSlots, { type: 'swap', slot1: i, slot2: j });
                     }
                 }
             }
@@ -1296,26 +1319,51 @@
         }
 
         function aiProposeCard(player) {
-            // Find best card matching from left to right.
             let bestCardIdx = 0;
-            let maxMatchesLeftToRight = -1;
 
-            for (let i = 0; i < player.hand.length; i++) {
-                let score = 0;
-                let c = player.hand[i];
-                for (let slot = 0; slot < 6; slot++) {
-                    let r = sightingReportSlots[slot];
-                    if (!r) continue;
-                    let cardTraitVal = c.traits[r.tileIndex];
-                    if (cardTraitVal === r.side) {
-                        score += Math.pow(10, 5 - slot); // Massive weight to slot 1 (leftmost)
-                    } else {
-                        break; // Stop counting the moment it mismatches to align with elimination rules
+            if (player.aiStrategy === 'strategic') {
+                // Strategic: consider best manipulation for remaining hand after playing each card
+                let bestValue = -Infinity;
+                for (let i = 0; i < player.hand.length; i++) {
+                    let cardScore = scoreCardForSlots(player.hand[i], sightingReportSlots);
+                    let remaining = player.hand.filter((_, idx) => idx !== i);
+                    // Baseline: best remaining card with no manipulation
+                    let bestManipValue = remaining.length > 0 ? bestCardScore(remaining, sightingReportSlots) : 0;
+                    // Try all possible manipulations
+                    for (let s = 0; s < 6; s++) {
+                        if (!sightingReportSlots[s]) continue;
+                        // Try flip
+                        let flipped = JSON.parse(JSON.stringify(sightingReportSlots));
+                        flipped[s].side = 1 - flipped[s].side;
+                        let flipBest = remaining.length > 0 ? bestCardScore(remaining, flipped) : 0;
+                        bestManipValue = Math.max(bestManipValue, flipBest);
+                        // Try swaps
+                        for (let s2 = s + 1; s2 < 6; s2++) {
+                            if (!sightingReportSlots[s2]) continue;
+                            let swapped = JSON.parse(JSON.stringify(sightingReportSlots));
+                            let temp = swapped[s];
+                            swapped[s] = swapped[s2];
+                            swapped[s2] = temp;
+                            let swapBest = remaining.length > 0 ? bestCardScore(remaining, swapped) : 0;
+                            bestManipValue = Math.max(bestManipValue, swapBest);
+                        }
+                    }
+                    // Equal weight: current card score + future potential
+                    let value = cardScore + bestManipValue;
+                    if (value > bestValue) {
+                        bestValue = value;
+                        bestCardIdx = i;
                     }
                 }
-                if (score > maxMatchesLeftToRight) {
-                    maxMatchesLeftToRight = score;
-                    bestCardIdx = i;
+            } else {
+                // Greedy: pick card with highest score against current sighting report
+                let maxScore = -1;
+                for (let i = 0; i < player.hand.length; i++) {
+                    let score = scoreCardForSlots(player.hand[i], sightingReportSlots);
+                    if (score > maxScore) {
+                        maxScore = score;
+                        bestCardIdx = i;
+                    }
                 }
             }
 
