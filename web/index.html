@@ -607,7 +607,12 @@
         const AI_NAMES = ['ShadowBot', 'BeastAI', 'CryptoHunter', 'NightOwl', 'DeepTracker'];
         const AI_STRATEGIES = {
             greedy: 'Plays the card that best matches current traits',
-            strategic: 'Plans ahead considering manipulation options'
+            strategic: 'Plans ahead considering manipulation options',
+            cardcounter: 'Strategic + tracks played cards to predict opponents',
+            lazy: 'Only checks the 4 most important traits',
+            morelazy: 'Only checks the 3 most important traits',
+            mostlazy: 'Only checks the 2 most important traits',
+            random: 'Makes completely random choices'
         };
 
         function rebuildPlayerRows() {
@@ -653,7 +658,7 @@
                 let strategySelect = document.createElement('select');
                 strategySelect.className = 'p-strategy';
                 strategySelect.style.cssText = 'padding: 4px 8px; font-size: 14px; border-radius: 4px; border: 1px solid #555; background: #2a2a3a; color: #e0e0e0;';
-                strategySelect.innerHTML = '<option value="greedy">Greedy</option><option value="strategic">Strategic</option>';
+                strategySelect.innerHTML = '<option value="greedy">Greedy</option><option value="strategic">Strategic</option><option value="cardcounter">CardCounter</option><option value="lazy">Lazy</option><option value="morelazy">MoreLazy</option><option value="mostlazy">MostLazy</option><option value="random">Random</option>';
                 strategySelect.value = defaultStrategy;
 
                 let desc = document.createElement('span');
@@ -774,6 +779,7 @@
         let currentExpedition = 0;
         let sightingsPlayed = 0;
         let playedCards = []; // Tracks proposed cryptids { playerIdx: int, card: object }
+        let expeditionSeenCards = []; // Cards seen in previous sightings this expedition (for card counting)
         let logElement = document.getElementById('game-log');
 
         const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -833,6 +839,7 @@
             await runDraftPhase(draftStarterIdx);
 
             // Play 7 Sightings
+            expeditionSeenCards = [];
             sightingsPlayed = 0;
             for (let s = 1; s <= cardsPerHand; s++) {
                 await runSighting(s);
@@ -1045,15 +1052,26 @@
         }
 
         function aiDraftChoice(player, slotIdx, availableTiles) {
-            // Simple smart AI: pick a tile category that matches their hand well.
-            // But let's keep it random for simple implementation to ensure robustness.
+            if (player.aiStrategy === 'cardcounter' && player.hand.length > 0) {
+                // CardCounter draft: pick tile+side that maximizes win rate vs unknown pool
+                let bestTile = availableTiles[0], bestSide = 0, bestWR = -1;
+                for (let t of availableTiles) {
+                    for (let s = 0; s < 2; s++) {
+                        let simSlots = sightingReportSlots.map(x => x ? {...x} : null);
+                        simSlots[slotIdx] = { tileIndex: t, side: s };
+                        let wr = cardCounterBestWinRate(player.hand, simSlots);
+                        if (wr > bestWR) { bestWR = wr; bestTile = t; bestSide = s; }
+                    }
+                }
+                return { tileIndex: bestTile, side: bestSide };
+            }
+
+            // Default: pick tile category that matches hand best
             let idx = Math.floor(Math.random() * availableTiles.length);
             let tileIndex = availableTiles[idx];
             let side = Math.floor(Math.random() * 2);
 
-            // Slightly smarter: try to match hand.
             if (player.hand.length > 0) {
-                // Find category where most cards in hand share a side
                 let bestTile = -1, bestSide = -1, maxMatches = -1;
                 for(let t of availableTiles) {
                     let side0Count = player.hand.filter(c => c.traits[t] === 0).length;
@@ -1184,11 +1202,13 @@
             });
         }
 
-        function scoreCardForSlots(card, slots) {
+        function scoreCardForSlots(card, slots, maxSlots) {
             // Weighted by slot importance: slot 1=32, slot 2=16, ..., slot 6=1
             // Counts all matching slots (no break on mismatch) for better AI heuristic
+            // maxSlots: optional limit on how many slots to check (default: all 6)
+            let limit = maxSlots || 6;
             let score = 0;
-            for (let slot = 0; slot < 6; slot++) {
+            for (let slot = 0; slot < limit; slot++) {
                 let r = slots[slot];
                 if (!r) continue;
                 if (card.traits[r.tileIndex] === r.side) {
@@ -1198,24 +1218,112 @@
             return score;
         }
 
-        function bestCardScore(hand, slots) {
+        function bestCardScore(hand, slots, maxSlots) {
             let max = -1;
             for (let c of hand) {
-                let s = scoreCardForSlots(c, slots);
+                let s = scoreCardForSlots(c, slots, maxSlots);
                 if (s > max) max = s;
             }
             return max;
         }
 
+        // Compare two cards head-to-head against a sighting report
+        // Returns 1 if myCard wins, -1 if oppCard wins, 0 if tie
+        function pairwiseResult(myCard, oppCard, slots) {
+            for (let slot = 0; slot < 6; slot++) {
+                let r = slots[slot];
+                if (!r) continue;
+                let myMatch = myCard.traits[r.tileIndex] === r.side;
+                let oppMatch = oppCard.traits[r.tileIndex] === r.side;
+                if (myMatch && !oppMatch) return 1;
+                if (!myMatch && oppMatch) return -1;
+            }
+            return 0;
+        }
+
+        // CardCounter helper: best win rate of any card in hand vs unknown opponent pool
+        function cardCounterBestWinRate(hand, slots) {
+            let knownIds = new Set(hand.map(c => c.id).concat(expeditionSeenCards.map(c => c.id)));
+            let unknownPool = DECK.filter(c => !knownIds.has(c.id));
+            let bestWR = -1;
+            for (let card of hand) {
+                let wins = 0;
+                for (let opp of unknownPool) {
+                    let r = pairwiseResult(card, opp, slots);
+                    if (r > 0) wins++;
+                    else if (r === 0) wins += 0.5;
+                }
+                let wr = unknownPool.length > 0 ? wins / unknownPool.length : 0;
+                if (wr > bestWR) bestWR = wr;
+            }
+            return bestWR;
+        }
+
+        function lazyMaxSlots(strategy) {
+            if (strategy === 'mostlazy') return 2;
+            if (strategy === 'morelazy') return 3;
+            if (strategy === 'lazy') return 4;
+            return undefined;
+        }
+
         function aiAlterChoice(player, lastAction) {
+            // Random: pick a random action
+            if (player.aiStrategy === 'random') {
+                let options = [{ type: 'skip' }];
+                for (let i = 0; i < 6; i++) {
+                    if (!sightingReportSlots[i]) continue;
+                    if (lastAction && lastAction.type === 'flip' && lastAction.slotIdx === i) continue;
+                    options.push({ type: 'flip', slotIdx: i });
+                }
+                if (sightingReportSlots.every(s => s !== null)) {
+                    for (let i = 0; i < 6; i++) {
+                        for (let j = i + 1; j < 6; j++) {
+                            if (lastAction && lastAction.type === 'swap' && ((lastAction.slot1 === i && lastAction.slot2 === j) || (lastAction.slot1 === j && lastAction.slot2 === i))) continue;
+                            options.push({ type: 'swap', slot1: i, slot2: j });
+                        }
+                    }
+                }
+                return options[Math.floor(Math.random() * options.length)];
+            }
+
+            // CardCounter: evaluate manipulations by win rate vs unknown pool
+            if (player.aiStrategy === 'cardcounter') {
+                let bestMove = { type: 'skip' };
+                let bestWR = cardCounterBestWinRate(player.hand, sightingReportSlots);
+
+                function tryMoveCC(simSlots, move) {
+                    let wr = cardCounterBestWinRate(player.hand, simSlots);
+                    if (wr > bestWR) { bestWR = wr; bestMove = move; }
+                }
+
+                for (let i = 0; i < 6; i++) {
+                    if (!sightingReportSlots[i]) continue;
+                    if (lastAction && lastAction.type === 'flip' && lastAction.slotIdx === i) continue;
+                    let simSlots = JSON.parse(JSON.stringify(sightingReportSlots));
+                    simSlots[i].side = 1 - simSlots[i].side;
+                    tryMoveCC(simSlots, { type: 'flip', slotIdx: i });
+                }
+                if (sightingReportSlots.every(s => s !== null)) {
+                    for (let i = 0; i < 6; i++) {
+                        for (let j = i + 1; j < 6; j++) {
+                            if (lastAction && lastAction.type === 'swap' && ((lastAction.slot1 === i && lastAction.slot2 === j) || (lastAction.slot1 === j && lastAction.slot2 === i))) continue;
+                            let simSlots = JSON.parse(JSON.stringify(sightingReportSlots));
+                            let temp = simSlots[i]; simSlots[i] = simSlots[j]; simSlots[j] = temp;
+                            tryMoveCC(simSlots, { type: 'swap', slot1: i, slot2: j });
+                        }
+                    }
+                }
+                return bestMove;
+            }
+
             let bestMove = { type: 'skip' };
-            let bestScore = bestCardScore(player.hand, sightingReportSlots);
+            const isStrategic = player.aiStrategy === 'strategic';
+            const maxSlots = lazyMaxSlots(player.aiStrategy);
+            let bestScore = bestCardScore(player.hand, sightingReportSlots, maxSlots);
             let bestTiebreak = -Infinity;
 
-            const isStrategic = player.aiStrategy === 'strategic';
-
             function evaluateCandidate(simSlots) {
-                let primary = bestCardScore(player.hand, simSlots);
+                let primary = bestCardScore(player.hand, simSlots, maxSlots);
                 if (!isStrategic) return { primary, tiebreak: 0 };
                 // Strategic tiebreaker: top-2 average minus all-card average
                 let scores = player.hand.map(c => scoreCardForSlots(c, simSlots)).sort((a, b) => b - a);
@@ -1323,48 +1431,76 @@
             });
         }
 
+        function strategicFutureValue(hand, cardIdx, slots) {
+            let remaining = hand.filter((_, idx) => idx !== cardIdx);
+            let bestManipValue = remaining.length > 0 ? bestCardScore(remaining, slots) : 0;
+            for (let s = 0; s < 6; s++) {
+                if (!slots[s]) continue;
+                let flipped = JSON.parse(JSON.stringify(slots));
+                flipped[s].side = 1 - flipped[s].side;
+                let flipBest = remaining.length > 0 ? bestCardScore(remaining, flipped) : 0;
+                bestManipValue = Math.max(bestManipValue, flipBest);
+                for (let s2 = s + 1; s2 < 6; s2++) {
+                    if (!slots[s2]) continue;
+                    let swapped = JSON.parse(JSON.stringify(slots));
+                    let temp = swapped[s];
+                    swapped[s] = swapped[s2];
+                    swapped[s2] = temp;
+                    let swapBest = remaining.length > 0 ? bestCardScore(remaining, swapped) : 0;
+                    bestManipValue = Math.max(bestManipValue, swapBest);
+                }
+            }
+            return bestManipValue;
+        }
+
         function aiProposeCard(player) {
             let bestCardIdx = 0;
 
-            if (player.aiStrategy === 'strategic') {
+            if (player.aiStrategy === 'random') {
+                // Random: pick a random card
+                bestCardIdx = Math.floor(Math.random() * player.hand.length);
+            } else if (player.aiStrategy === 'cardcounter') {
+                // CardCounter: strategic + win probability against unknown opponent cards
+                let knownIds = new Set(player.hand.map(c => c.id).concat(expeditionSeenCards.map(c => c.id)));
+                let unknownPool = DECK.filter(c => !knownIds.has(c.id));
+
+                let bestValue = -Infinity;
+                for (let i = 0; i < player.hand.length; i++) {
+                    let card = player.hand[i];
+                    // Win rate against unknown pool
+                    let wins = 0;
+                    for (let opp of unknownPool) {
+                        let result = pairwiseResult(card, opp, sightingReportSlots);
+                        if (result > 0) wins++;
+                        else if (result === 0) wins += 0.5;
+                    }
+                    let winRate = unknownPool.length > 0 ? wins / unknownPool.length : 0;
+                    // Strategic future value as tiebreaker
+                    let futureValue = strategicFutureValue(player.hand, i, sightingReportSlots);
+                    let value = winRate * 1000 + futureValue;
+                    if (value > bestValue) {
+                        bestValue = value;
+                        bestCardIdx = i;
+                    }
+                }
+            } else if (player.aiStrategy === 'strategic') {
                 // Strategic: consider best manipulation for remaining hand after playing each card
                 let bestValue = -Infinity;
                 for (let i = 0; i < player.hand.length; i++) {
                     let cardScore = scoreCardForSlots(player.hand[i], sightingReportSlots);
-                    let remaining = player.hand.filter((_, idx) => idx !== i);
-                    // Baseline: best remaining card with no manipulation
-                    let bestManipValue = remaining.length > 0 ? bestCardScore(remaining, sightingReportSlots) : 0;
-                    // Try all possible manipulations
-                    for (let s = 0; s < 6; s++) {
-                        if (!sightingReportSlots[s]) continue;
-                        // Try flip
-                        let flipped = JSON.parse(JSON.stringify(sightingReportSlots));
-                        flipped[s].side = 1 - flipped[s].side;
-                        let flipBest = remaining.length > 0 ? bestCardScore(remaining, flipped) : 0;
-                        bestManipValue = Math.max(bestManipValue, flipBest);
-                        // Try swaps
-                        for (let s2 = s + 1; s2 < 6; s2++) {
-                            if (!sightingReportSlots[s2]) continue;
-                            let swapped = JSON.parse(JSON.stringify(sightingReportSlots));
-                            let temp = swapped[s];
-                            swapped[s] = swapped[s2];
-                            swapped[s2] = temp;
-                            let swapBest = remaining.length > 0 ? bestCardScore(remaining, swapped) : 0;
-                            bestManipValue = Math.max(bestManipValue, swapBest);
-                        }
-                    }
-                    // Equal weight: current card score + future potential
-                    let value = cardScore + bestManipValue;
+                    let futureValue = strategicFutureValue(player.hand, i, sightingReportSlots);
+                    let value = cardScore + futureValue;
                     if (value > bestValue) {
                         bestValue = value;
                         bestCardIdx = i;
                     }
                 }
             } else {
-                // Greedy: pick card with highest score against current sighting report
+                // Greedy/Lazy: pick card with highest score against current sighting report
+                let maxSlots = lazyMaxSlots(player.aiStrategy);
                 let maxScore = -1;
                 for (let i = 0; i < player.hand.length; i++) {
-                    let score = scoreCardForSlots(player.hand[i], sightingReportSlots);
+                    let score = scoreCardForSlots(player.hand[i], sightingReportSlots, maxSlots);
                     if (score > maxScore) {
                         maxScore = score;
                         bestCardIdx = i;
@@ -1425,9 +1561,12 @@
             setBanner(`${winner.name} wins Sighting ${sightingsPlayed}!`);
             document.getElementById(`played-c-${winnerInfo.playerIdx}`).classList.add('winner');
             
+            // Track played cards for card counting AI
+            for (let pc of playedCards) expeditionSeenCards.push(pc.card);
+
             updateUI(); // Updates score
             await delay(2000); // 2 second pause so user can see what happened!
-            
+
             // Clear play area
             document.getElementById('play-area').innerHTML = '';
         }
