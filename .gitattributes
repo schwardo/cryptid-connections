@@ -1,1 +1,2 @@
+graphics/inkscape/*.svg filter=lfs diff=lfs merge=lfs -text
 graphics/card-back.svg filter=lfs diff=lfs merge=lfs -text
