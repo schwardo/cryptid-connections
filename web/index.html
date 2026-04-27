@@ -521,6 +521,14 @@
             #game-log.expanded {
                 max-height: 60vh;
             }
+            #sidebar-column.minimized > h3,
+            #sidebar-column.minimized > #game-log {
+                display: none !important;
+            }
+            #sidebar-column.minimized {
+                padding: 2px;
+                margin: 0 5px 5px;
+            }
             .mobile-hide {
                 display: none !important;
             }
@@ -1602,13 +1610,23 @@
         }
 
         function toggleLog() {
+            let sidebar = document.getElementById('sidebar-column');
             let logEl = document.getElementById('game-log');
             let btn = document.getElementById('log-toggle');
-            logEl.classList.toggle('expanded');
-            if (logEl.classList.contains('expanded')) {
-                btn.innerText = 'Tap to Collapse Log';
-            } else {
+            let isExpanded = logEl.classList.contains('expanded');
+            let isMinimized = sidebar.classList.contains('minimized');
+            // Cycle: default -> expanded -> minimized -> default
+            if (isMinimized) {
+                sidebar.classList.remove('minimized');
+                logEl.classList.remove('expanded');
                 btn.innerText = 'Tap to Expand Log';
+            } else if (isExpanded) {
+                logEl.classList.remove('expanded');
+                sidebar.classList.add('minimized');
+                btn.innerText = 'Tap to Show Log';
+            } else {
+                logEl.classList.add('expanded');
+                btn.innerText = 'Tap to Minimize Log';
             }
         }
 
